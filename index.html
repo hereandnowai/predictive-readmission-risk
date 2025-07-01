@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predictive Readmission Risk - HERE AND NOW AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="https://raw.githubusercontent.com/hereandnowai/images/refs/heads/main/favicon-logo-with-name.png" type="image/png">
+  <script>
+    tailwind.config = {
+      darkMode: 'class', // Enable class-based dark mode
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FFDF00', // Golden Yellow - Accent, good for both themes
+            secondary: '#004040', // Teal - Thematic color, often surface in dark mode
+            'light-primary': '#FFFACD', // LemonChiffon as a lighter primary
+            'dark-secondary': '#002020', // Darker Teal - often footer/darker surface in dark
+            'accent': '#FFA500', // Orange for specific accents if needed
+            
+            // Base colors for dark theme (as per original setup)
+            'text-primary': '#FFFFFF',    // Main text in dark mode
+            'text-secondary': '#E0E0E0', // Muted text in dark mode
+            'bg-main': '#003030',       // Main background in dark mode
+
+            // Added for clarity for light theme text on colored backgrounds
+            'text-on-primary-bg': '#004040', // Teal text on Primary (yellow) background
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "recharts": "https://esm.sh/recharts@^3.0.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.6.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-slate-100 text-slate-900 dark:bg-bg-main dark:text-text-primary transition-colors duration-300">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "Predictive Readmission Risk",
+  "description": "An AI-powered web application to predict the likelihood of patient readmission to hospitals within 30 days of discharge using healthcare data. Developed by HERE AND NOW AI.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "prompt": ""
+}
