@@ -1,4 +1,3 @@
-
 import React, { useMemo } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell, Sector } from 'recharts';
 import { PredictionOutput, PatientData, AgeDistributionData, DiagnosisDistributionData, LengthOfStayData } from '../types';
@@ -262,7 +261,7 @@ export const InsightsDashboard: React.FC<InsightsDashboardProps> = ({ prediction
             </ResponsiveContainer>
           </Card>
            <p className="text-xs text-center text-slate-500 dark:text-gray-400 mt-4">
-            Note: "Readmitted" in these charts refers to patients predicted with high readmission risk (>50%) for illustrative purposes. 
+            Note: "Readmitted" in these charts refers to patients predicted with high readmission risk (&gt;50%) for illustrative purposes. 
             Actual readmission outcomes would be used in a real-world scenario.
           </p>
         </div>
